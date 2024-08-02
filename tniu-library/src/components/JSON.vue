@@ -107,9 +107,10 @@ const allFamousWorks = computed(() => {
 })
 
 // Activity 4: Find author by name
-const orwell = computed(() => {
+const orwell = computed(() =>
   // TODO: CODE TO FIND AUTHOR BY NAME HERE
-})
+  authors.find(author => author.name === "George Orwell")
+)
 
 // Activity 5: Find author by ID
 const austen = computed(() => {
