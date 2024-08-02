@@ -10,6 +10,11 @@
       <h3>Iterating through Arrays</h3>
       <!-- Activity 6: Render a list containing author names and their birth years. Hint: Make use of the v-for directive to iterate through the array of authors. -->
       <!-- TODO: CODE TO RENDER LIST OF AUTHORS HERE -->
+      <ul>
+        <li v-for="author in authors" :key="author.id">
+          {{ author.name }} ({{ author.birthYear }})
+        </li>
+      </ul>
       
       <h3>Filtering Arrays</h3>
       <!-- Activity 7: Render a list containing authors born after 1850. Hint: Make use of the v-for directive to iterate through the array of authors that you have filtered out. -->
@@ -115,8 +120,8 @@ const orwell = computed(() =>
 // Activity 5: Find author by ID
 const austen = computed(() => 
   // TODO: CODE TO FIND AUTHOR BY ID HERE
-  authors.find(author => author.id === 1))
-}
+  authors.find(author => author.id === 1)
+)
 
 </script>
 
