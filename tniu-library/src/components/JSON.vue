@@ -113,9 +113,11 @@ const orwell = computed(() =>
 )
 
 // Activity 5: Find author by ID
-const austen = computed(() => {
+const austen = computed(() => 
   // TODO: CODE TO FIND AUTHOR BY ID HERE
-})
+  authors.find(author => author.id === 1))
+}
+
 </script>
 
 <style scoped>
