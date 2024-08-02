@@ -116,7 +116,7 @@
       <p v-else class="message">Click the button to see a message.</p>
     </section>
 
-     <section class="lab-section">
+    <section class="lab-section">
       <h2>Attribute, Class and Style Binding with <code>v-bind</code></h2>
       <p>Highlighting Specific Authors:</p>
       <ul>
@@ -141,26 +141,26 @@ import bookstores from "../assets/json/bookstores.json"
 const showMessage = ref(false)
 
 // Activity 2: Get authors born after 1850
-const modernAuthors = computed(() => {
+const modernAuthors = computed(() => 
   // TODO: CODE TO FILTER ARRAY OF AUTHORS HERE
-  authors.filter((author) => author.birthYear > 1850)
-})
+  authors.filter(author => author.birthYear > 1850)
+)
 
 // Activity 3: Get all famous works
-const allFamousWorks = computed(() => {
+const allFamousWorks = computed(() => 
   // TODO: CODE TO GET ALL FAMOUS WORKS HERE
-  authors.flatMap((author) => author.famousWorks.map((work) => work.title))
-})
+  authors.flatMap(author => author.famousWorks.map(work => work.title)
+))
 
 // Activity 4: Find author by name
-const orwell = computed(() =>
+const orwell = computed(() => 
   // TODO: CODE TO FIND AUTHOR BY NAME HERE
   authors.find(author => author.name === "George Orwell")
 )
 
 // Activity 5: Find author by ID
 const austen = computed(() => 
-  // TODO: CODE TO FIND AUTHOR BY ID HERE
+    // TODO: CODE TO FIND AUTHOR BY ID HERE
   authors.find(author => author.id === 1)
 )
 
